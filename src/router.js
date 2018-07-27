@@ -1,21 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
-
+import BusinessVerify from '@/views/business-verify'
+import OrganizationHome from '@/views/organization/organization-home'
+import MemberHome from '@/views/member/member-home'
+import OrganizationVerify from '@/views/organization/organization-verify'
+import MemberVerify from '@/views/member/member-verify'
+import EnterpriseInfo from '@/views/utils/enterprise-info'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'business-verify',
+      component: BusinessVerify
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/organization-home',
+      name: 'organization-home',
+      component: OrganizationHome
+    }, {
+      path: '/member-home',
+      name: 'member-home',
+      component: MemberHome
+    }, {
+      path: '/organization-verify',
+      name: 'organization-verify',
+      component: OrganizationVerify
+    }, {
+      path: '/member-verify',
+      name: 'member-verify',
+      component: MemberVerify
+    }, {
+      path: '/enterprise-info',
+      name: 'enterprise-info',
+      component: EnterpriseInfo
     }
   ]
 })
