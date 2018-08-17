@@ -21,12 +21,12 @@ export default {
         {
           icon: "icon-shanghu",
           content: "商户管理",
-          routerPath: ""
+          routerPath: "/members-manage"
         },
         {
           icon: "icon-jiankong",
           content: "设备监控",
-          routerPath: ""
+          routerPath: "equipment-monitoring"
         },
         {
           icon: "icon-yujing",

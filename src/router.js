@@ -6,6 +6,9 @@ import MemberHome from '@/views/member/member-home'
 import OrganizationVerify from '@/views/organization/organization-verify'
 import MemberVerify from '@/views/member/member-verify'
 import EnterpriseInfo from '@/views/utils/enterprise-info'
+import MembersManage from '@/views/organization/members-manage'
+import AllMembers from '@/views/organization/all-members'
+import EquipmentMonitoring from '@/views/organization/equipment-monitoring'
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +37,18 @@ export default new Router({
       path: '/enterprise-info',
       name: 'enterprise-info',
       component: EnterpriseInfo
+    }, {
+      path: '/members-manage',
+      name: 'members-manage',
+      component: MembersManage
+    }, {
+      path: '/all-members',
+      name: 'all-members',
+      component: AllMembers
+    }, {
+      path: '/equipment-monitoring',
+      name: 'equipment-monitoring',
+      component: EquipmentMonitoring
     }
   ]
 })
